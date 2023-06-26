@@ -23,7 +23,7 @@
         android:background="@android:color/transparent"
         android:layout_columnWeight="1"
         android:textColor="#fff"
-        android:drawableRight="@drawable/student"
+        android:drawableLeft="@drawable/student"
         android:text="Master Mahasiswa">
     </Button>
 
