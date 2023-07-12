@@ -16,8 +16,8 @@ import cz.msebera.android.httpclient.Header;
 
 public class MenuActivity extends AppCompatActivity
 {
-    private Button _tampilMahasiswaButton, _forexRateButton, _cuacaButton;
-    private Intent _tampilMahasiswaIntent, _forexRateIntent, _cuacaIntent;
+    private Button _tampilMahasiswaButton, _forexRateButton, _cuacaButton, _tabLayoutButton, _hotelButton;
+    private Intent _tampilMahasiswaIntent, _forexRateIntent, _cuacaIntent, _tabLayoutIntent, _hotelIntent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +26,8 @@ public class MenuActivity extends AppCompatActivity
         _tampilMahasiswaButton = findViewById(R.id.mahasiswaButton);
         _forexRateButton = findViewById(R.id.forexRateButton);
         _cuacaButton = findViewById(R.id.cuacaButton);
+        _tabLayoutButton = findViewById(R.id.tabLayoutButton);
+        _hotelButton = findViewById(R.id.hotelButton);
 
         _tampilMahasiswaButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,5 +97,24 @@ public class MenuActivity extends AppCompatActivity
                 });
             }
         });
+
+        _tabLayoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "Selamat Datang di Menu TabLayout", Toast.LENGTH_LONG).show();
+                _tabLayoutIntent = new Intent(getApplicationContext(), TabLayoutMainActivity.class);
+                startActivity(_tabLayoutIntent);
+            }
+        });
+
+        _hotelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "Selamat Datang di Menu Hotel", Toast.LENGTH_LONG).show();
+                _hotelIntent = new Intent(getApplicationContext(), HotelMainActivity.class);
+                startActivity(_hotelIntent);
+            }
+        });
+
     }
 }

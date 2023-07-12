@@ -38,5 +38,25 @@
         android:text="Weather"
         android:id="@+id/cuacaButton">
     </Button>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_columnWeight="1"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/img_layout_128"
+        android:textColor="#fff"
+        android:text="Tab Layout"
+        android:id="@+id/tabLayoutButton">
+    </Button>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_columnWeight="1"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/hotel_128"
+        android:textColor="#fff"
+        android:text="Hotel"
+        android:id="@+id/hotelButton">
+    </Button>
 
 </GridLayout>
